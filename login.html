@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Login and Registration</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   </head>
+<body>
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white text-dark py-2 fixed-top">
+        <div class="container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <i class='bx bxs-shopping-bag' style="font-size: 25px;"></i>
+                <span class = "text-uppercase fw-lighter ms-2">Frenzy</span>
+            </a>
+            <div class = "order-lg-2 nav-btns">
+                <a href="cart.html"><button type = "button" class = "btn position-relative">
+                    <i class='bx bxs-cart' style="font-size: 25px;"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">3</span>
+                </button></a>
+                <button type = "button" class = "btn position-relative">
+                    <i class='bx bxs-heart' style="font-size: 25px;"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-4 pb-2 pt-0">
+                        <a class = "nav-link text-uppercase font-weight-bold text-dark" href = "login.html" style="font-size: 25px;">Login</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html">home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "Hompage.html">About</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "Hompage.html">Specials</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <div class="dropdown show">
+                            <a class="nav-link btn btn-light dropdown-toggle bg-white border-0 text-dark text-uppercase" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                              Catagories
+                            </a>
+                          
+                            <div class="dropdown-menu bg-white text-center border-0" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="kidscollection.html">Kids</a>
+                              <a class="dropdown-item" href="menscollection.html">Men</a>
+                              <a class="dropdown-item" href="womencollect.html">Women</a>
+                            </div>
+                          </div>
+                    </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+    <section>
+        <div class="login">
+            <div class="container">
+                <input type="checkbox" id="flip">
+                <div class="cover">
+                <div class="front">
+                    <img src="Images/men2.jpg" alt="">
+                    <div class="text">
+                    <span class="text-1">Every new friend is a <br> new adventure</span>
+                    <span class="text-2">Let's get connected</span>
+                    </div>
+                </div>
+                </div>
+                <div class="forms">
+                    <div class="form-content">
+                    <div class="login-form">
+                        <div class="title">Login</div>
+                    <form action="#">
+                        <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="text"><a href="#">Forgot password?</a></div>
+                        <div class="button input-box">
+                            <input type="submit" value="Submit" data-toggle="modal" data-target="#Login">
+                        </div>
+                        <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+                        </div>
+                    </form>
+                </div>
+                    <div class="signup-form">
+                    <div class="title">Signup</div>
+                    <form action="#">
+                        <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="button input-box">
+                            <input type="submit" value="Submit" data-toggle="modal" data-target="#SignIn">
+                        </div>
+                        <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+                        </div>
+                </form>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="Login">
+            <div class="modal-dialog">
+              <div class="modal-content">
+        
+                <div class="modal-header">
+                <h4 class="modal-title">Welcome..</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <div class="modal-body text-center">
+                    <h2 class="pt-3">Welcome!</h2>
+                    <p>Successfully Logined<br></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="Hompage.html"><button class="btn bg-warning border-dark">Go To Homepage</button></a>
+                    <button type="button" class="btn bg-secondary text-dark" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="SignIn">
+            <div class="modal-dialog">
+              <div class="modal-content">
+        
+                <div class="modal-header">
+                <h4 class="modal-title">Success</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <div class="modal-body text-center">
+                    <h2 class="pt-3">Account Created Successfully.</h2>
+                    <p>Go To Login!<br></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="login.html"><button class="btn bg-warning border-dark">Login</button></a>
+                    <button type="button" class="btn bg-secondary text-dark" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container-fluid " style="background-color: beige;">
+            <footer class="py-3 my-3">
+              <div class="border-bottom">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+                <ul class="nav justify-content-center mb-2">
+                  <li class="nav-item">
+                      <a><i class='bx bxl-facebook-circle bx-sm px-0 pt-2'></i></a>&nbsp;&nbsp;<a><i class='bx bxl-linkedin-square  bx-sm px-2 pt-2' ></i></a>&nbsp;&nbsp;<a><i class='bx bxl-instagram-alt bx-sm pt-2 px-2'></i></a>&nbsp;&nbsp;<a><i class='bx bxl-twitter bx-sm pt-2 px-2' ></i></a>
+                    </li>
+                </ul>
+              </div>
+              <p class="text-center text-muted">© 2021 Frenzy Fashions, Inc</p>
+            </footer>
+          </div>  
+    </section>
+</body>
+</html>
